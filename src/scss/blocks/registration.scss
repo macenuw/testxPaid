@@ -2,7 +2,6 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  // align-items: center;
 
   &__inner {
     display: flex;
@@ -97,18 +96,18 @@
   }
 
   &__input {
-    padding: 14px 14px 13px;
+    padding: 14px 12px 13px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     font-weight: 400;
     font-size: 17px;
-    line-height: 20.7px;
+    line-height: 21px;
 
     &::placeholder {
       font-weight: 400;
       font-size: 17px;
       line-height: 20px;
-      letter-spacing: -.4px;
+      letter-spacing: -.2px;
 
       color: rgba(0, 0, 0, 0.26);
     }
@@ -120,7 +119,7 @@
     line-height: 16px;
     color: rgba(60, 60, 67, 0.6);
     padding-top: 6px;
-    letter-spacing: -.3px;
+    letter-spacing: -.2px;
   }
 
   &__text {
