@@ -1,6 +1,6 @@
 // import 'jquery';
-// import example from './plugins/example'
+import toggleActiveOnClick from './plugins/toggleActiveOnClick'
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   example();
-// })
+window.addEventListener("DOMContentLoaded", () => {
+  toggleActiveOnClick('#terms', 'active');
+})

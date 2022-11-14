@@ -2,7 +2,13 @@
   font-family: 'SF UI Display';
   font-style: normal;
   font-weight: 400;
-  src: local('SF UI Display Medium'), url('sf-ui-display-regular.woff') format('woff');
+  src: local('SF UI Display Regular'), url('sf-ui-display-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 500;
+  src: local('SF UI Display Medium'), url('sf-ui-display-medium.woff') format('woff');
 }
 
 @font-face {

@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
 
   &__inner {
     display: flex;
@@ -26,7 +26,7 @@
   }
 
   &__logo {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   &__title {
@@ -35,6 +35,7 @@
     font-size: 34px;
     line-height: 41px;
     margin-bottom: 12px;
+    letter-spacing: -.7px;
 
     @media (max-width:480px) {
       font-size: 25px;
@@ -49,21 +50,26 @@
     color: rgba(60, 60, 67, 0.6);
     margin-bottom: 6px;
     white-space: nowrap;
+    letter-spacing: -.2px;
   }
 
   &__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 22px;
     width: 100%;
+
+    @media (max-width:480px) {
+      padding-top: 24px;
+    }
   }
 
   &__label {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     &:last-of-type {
       margin-bottom: 30px;
@@ -91,17 +97,18 @@
   }
 
   &__input {
-    padding: 14px;
+    padding: 14px 14px 13px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     font-weight: 400;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 20.7px;
 
     &::placeholder {
       font-weight: 400;
       font-size: 17px;
       line-height: 20px;
+      letter-spacing: -.4px;
 
       color: rgba(0, 0, 0, 0.26);
     }
@@ -113,6 +120,7 @@
     line-height: 16px;
     color: rgba(60, 60, 67, 0.6);
     padding-top: 6px;
+    letter-spacing: -.3px;
   }
 
   &__text {
@@ -120,9 +128,11 @@
     font-size: 15px;
     line-height: 18px;
     color: rgba(60, 60, 67, 0.6);
+    letter-spacing: -.2px;
 
     @media (max-width:960px) {
       font-size: 17px;
+      letter-spacing: -.1px;
     }
 
   }
@@ -140,14 +150,41 @@
     padding-top: 18px;
     margin-bottom: 30px;
 
+    @media (max-width:960px) {
+      padding-top: 30px;
+      margin-bottom: 31px;
+    }
+
     .registration__text {
       font-size: 15px;
+      letter-spacing: -.3px;
     }
   }
 
   &__checkbox {
-    margin: 0;
+    width: 14px;
+    height: 14px;
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
     margin-right: 12px;
+
+    &.active {
+      background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-image: url('../../images/icons/checkmark.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: calc(50% - 5px);
+        top: calc(50% - 5px);
+      }
+    }
   }
 
   &__triger {
@@ -163,7 +200,7 @@
     font-size: 17px;
     line-height: 20px;
     text-align: center;
-    padding: 4px 14px;
+    padding: 4px 14px 3px;
     color: #FFFFFF;
   }
 }
